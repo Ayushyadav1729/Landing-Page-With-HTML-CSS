@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    
+
+}
+#nav{
+    height: 10%;
+    width: 100%;
+background: #e90f0f54;
+display: flex;
+justify-content: space-between;
+    align-items: center;
+
+}
+#lnavr a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: #f1efef;
+    font-weight: 500;
+    font-size: 14px;
+}
+#post{
+height: 90%;
+width: 100%;
+top: 10%;
+
+background: #f305052c;
+position: absolute;
+}
+#post img{
+    height: 80%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+    transform: translate(-50%,-50%);
+    
+}
+#scroll-text1::-webkit-scrollbar{
+    display: none;
+}
+#scroll-text1{
+    position: absolute;
+    top: 24%;
+    width: 100%;
+    
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+#scroll-text1 h1{
+    display: inline-block;
+    font-size: 120px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 35px;
+    letter-spacing: 4px;
+    
+    color: rgb(13, 137, 238);
+    animation: scroll;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+
+#scroll-text2::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-text2{
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    z-index: 99;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+#scroll-text2 h1{
+    display: inline-block;
+    font-size: 120px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 35px;
+    letter-spacing: 4px;
+    
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(235, 115, 3, 0.904);
+    animation: scroll;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+
+#scroll-text3::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-text3{
+    position: absolute;
+    top: 64%;
+    width: 100%;
+   
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+#scroll-text3 h1{
+    display: inline-block;
+    font-size: 120px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 35px;
+    letter-spacing: 4px;
+    color: rgb(80, 79, 79);
+   animation: scroll;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+#text{
+    font-size: 20px;
+    position: absolute;
+    width: 75%;
+    z-index: 999;
+    top: 10%;
+    text-align: center;
+    left: 13%;
+    text-transform: uppercase;
+font-family: 'Courier New', Courier, monospace;
+}
+
+#logo
+{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+@keyframes scroll {
+    0%{
+transform: translateX(0%);
+    }
+100%{
+transform: translateX(calc(-100% - 35px));
+    }
+    
+}
